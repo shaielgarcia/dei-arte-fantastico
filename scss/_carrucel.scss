@@ -1,0 +1,13 @@
+.carrucel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrucel__ancho {
+    width: 300px;
+}
+
+.carrucel__ancho--largo {
+    height: 400px;
+}

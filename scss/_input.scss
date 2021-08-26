@@ -1,0 +1,29 @@
+input {
+    width: 150px;
+    height: 30px;
+    transition: all 2s;
+}
+
+input:focus {
+    width: 200px;
+    font-size: 10px;
+}
+
+label {
+    color: rgb(92, 90, 228);
+}
+
+legend {
+    color: rgb(120, 97, 248);
+}
+
+input {
+    color: rgb(87, 83, 95);
+}
+
+#wrapper {
+    background-color: rgb(0, 0, 0);
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}

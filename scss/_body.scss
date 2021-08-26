@@ -1,0 +1,16 @@
+.body {
+    background: rgb(0, 0, 0);
+}
+
+.body__h2 {
+    font-style: italic;
+}
+
+.body__h2--diseño {
+    color: papayawhip;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px rgb(180, 126, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
