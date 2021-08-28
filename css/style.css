@@ -1,6 +1,8 @@
 @charset "UTF-8";
 .navegador {
-  background-color: black; }
+  background-color: black;
+  margin: 10px;
+  padding: 10px; }
 
 .navegador__a {
   font-style: italic; }
@@ -18,7 +20,9 @@
 .carrucel {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 3px;
+  padding: 3px; }
 
 .carrucel__ancho {
   width: 300px; }
@@ -38,14 +42,18 @@
   text-shadow: 3px 3px 3px #b47ee0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 10px;
+  padding: 10px; }
 
 img {
   width: 300px;
   height: 400px; }
 
 .p {
-  color: white; }
+  color: white;
+  margin: 10px;
+  padding: 10px; }
 
 .p__strong {
   color: #8b63f8; }
@@ -101,7 +109,9 @@ input:focus {
   font-size: 10px; }
 
 label {
-  color: #5c5ae4; }
+  color: #5c5ae4;
+  margin: 3px;
+  padding: 3px; }
 
 legend {
   color: #7861f8; }
