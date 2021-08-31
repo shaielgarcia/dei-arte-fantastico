@@ -25,10 +25,10 @@
   padding: 3px; }
 
 .carrucel__ancho {
-  width: 300px; }
+  width: 60em; }
 
 .carrucel__ancho--largo {
-  height: 400px; }
+  height: 40em; }
 
 .body {
   background: black; }
@@ -37,9 +37,9 @@
   font-style: italic; }
 
 .body__h2--diseño {
-  color: papayawhip;
+  color: #f5eded;
   font-size: 1.5rem;
-  text-shadow: 3px 3px 3px #b47ee0;
+  text-shadow: 3px 3px 3px #b66dd8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,8 +47,8 @@
   padding: 10px; }
 
 img {
-  width: 300px;
-  height: 400px; }
+  width: 10em;
+  height: 35em; }
 
 .p {
   color: white;
@@ -141,3 +141,6 @@ input {
 
 .media-heading {
   margin: 0 0 .5em; }
+
+.footer {
+  background: black; }
