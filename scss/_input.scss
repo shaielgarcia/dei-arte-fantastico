@@ -1,26 +1,22 @@
 input {
-    width: 150px;
-    height: 30px;
+    width: 280px;
+    height: 25px;
     transition: all 2s;
 }
 
 input:focus {
-    width: 200px;
-    font-size: 10px;
+    width: 260px;
+    font-size: 26px;
 }
 
 label {
-    color: rgb(92, 90, 228);
+    color: #D6BFFF;
     margin: 3px;
     padding: 3px;
 }
 
 legend {
-    color: rgb(120, 97, 248);
-}
-
-input {
-    color: rgb(87, 83, 95);
+    color: #D6BFFF;
 }
 
 #wrapper {

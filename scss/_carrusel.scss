@@ -1,4 +1,4 @@
-.carrucel {
+.carrusel {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,10 +6,10 @@
     padding: 3px;
 }
 
-.carrucel__ancho {
-    width: 60em;
+.carrusel__ancho {
+    width: 30em;
 }
 
-.carrucel__ancho--largo {
+.carrusel__ancho--largo {
     height: 40em;
 }
