@@ -1,7 +1,10 @@
 .navegador {
     background-color: rgb(0, 0, 0);
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navegador__a {
@@ -9,14 +12,14 @@
 }
 
 .navegador__a--color {
-    color: white;
+    color: #d6bfff;
 }
 
 .navegador__diseño {
-    font-size: 15px;
-    font-family: serif;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navegador__diseño--color {
-    text-decoration: rgb(149, 134, 219);
+    text-decoration: #d6bfff;
 }

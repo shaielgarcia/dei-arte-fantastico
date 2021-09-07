@@ -1,0 +1,8 @@
+@mixin botones($color) {
+    color: $color;
+    margin: 3px;
+}
+
+.boton {
+    @include botones(#D6BFFF)
+}
