@@ -5,6 +5,8 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2000;
+    font-weight: 500;
 }
 
 .navegador__a {
@@ -22,4 +24,8 @@
 
 .navegador__diseño--color {
     text-decoration: #d6bfff;
+}
+
+.navegador__titulo {
+    color: white;
 }
