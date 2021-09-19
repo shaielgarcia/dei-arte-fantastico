@@ -14,31 +14,32 @@
     />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--css-->
-    <link rel="stylesheet" href="../css/style.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <!--Cuerpo de esta pagina-->
 
 <body class="body">
+
     <!--Navegador-->
     <header class="navegador">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand navegador__a navegador__a--color navegador__diseño navegador__diseño--color">Dei Arte fantástico</a>
+                <a class="navbar-brand navegador__a navegador__titulo">Dei Arte fantástico</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active navegador__a navegador__a--color navegador__diseño navegador__diseño--color" aria-current="page" href="../home.html" style="color:#d6bfff ;">Home</a>
-                        <a class="nav-link  navegador__a navegador__a--color navegador__diseño navegador__diseño--color" href="../pages/artista.html " style="color:#d6bfff ;">Artista</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="../pages/imagenes.html" style="color:#d6bfff ;">Imágenes</a>
-                        <a class="nav-link  navegador__a navegador__a--color navegador__diseño navegador__diseño--color" href="../pages/obras.html  " style="color:#d6bfff ;">Inspiraciones</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="../pages/contacto.html" style="color:#d6bfff ;">Contacto</a>
+                        <a class="nav-link active navegador__a navegador__a--color navegador__diseño navegador__diseño--color" aria-current="page" href="../home.html">Home</a>
+                        <a class="nav-link  navegador__a navegador__a--color navegador__diseño navegador__diseño--color" href="../pages/artista.html ">Artista</a>
+                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="../pages/imagenes.html">Imágenes</a>
+                        <a class="nav-link  navegador__a navegador__a--color navegador__diseño navegador__diseño--color" href="../pages/obras.html  ">Inspiraciones</a>
+                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="../pages/contacto.html">Contacto</a>
 
                     </div>
                 </div>
@@ -47,45 +48,37 @@
     </header>
 
     <!--Formulario de datos-->
-    <div id="wrapper">
+    <div class="container">
         <section>
-            <h3 class="animate__animated animate__flipInX body__h2 body__h2--diseño">Contacto</h3>
             <form action="envio.php" method="post">
-                <fieldset>
-                    <label for="Nombre" class="label label label__input ">Nombre</label>
-                    <input type="text" name="Nombre" placeholder="Nadia Romina" class="label__letra--input ">
-                    <br>
-                    <label for="Apellido" class="label label label__input ">Apellido</label>
-                    <input type="text" name="Apellido" placeholder="Martinez" class="label__letra--input ">
-                    <br>
-                    <label for="Email" class="label label label__input">E-mail</label>
-                    <input type="text" name="Email" placeholder="sam09@hotmail" class="label__letra--input ">
-
-                </fieldset>
-
-
-                <label for="Asunto" class=" label label label__input ">Asunto</label>
-                <form action="">
-                    <select name="Asunto">
-                <option value=""></option>
-                <option value="Reclamo">Reclamo</option>
-                <option value="Conculta" >Consulta</option>
-                <option value="Otro" >Otro</option>
-            </select>
-
-                </form> <br>
-                <textarea name="Comentario" id="" cols="30" rows="10" placeholder="Deja aqui tu comentario" style="justify-content: center;"></textarea>
-
-
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-outline-dark boton boton__color boton__color--l  " type="button">Cancelar</button>
-                    <button class="btn btn-outline-dark boton boton__color boton__color--l" type="button">Enviar</button>
+                <div class="form">
+                    <h2 class="body__h2 body__h2--diseño">Contacto</h2>
+                    <div class="grupo">
+                        <input type="text" name="nombre" required><span class="barra"></span>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="text" name="Apellido" required><span class="barra"></span>
+                        <label for="">Apellido</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="email" name="email" required><span class="barra"></span>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="number" name="telefono" required><span class="barra"></span>
+                        <label for="">telefono</label>
+                    </div>
+                    <div class="grupo">
+                        <textarea name="" id="" placeholder="Deja aquí tu mensaje"></textarea><span class="barra"></span>
+                        <label for="">mensaje</label>
+                    </div>
+                    <button type="submit">Enviar</button>
                 </div>
-
+            </form>
         </section>
+
     </div>
-
-
 
 
 
@@ -103,11 +96,14 @@
                         </i>
                     </a>
                     <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://www.instagram.com/dei_artefantastico/?hl=es " role="button "><i class="fab fa-instagram redsocial--nueva"></i></a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://www.instagram.com/dei_artefantastico/?hl=es " role="button "><i
+                            class="fab fa-instagram redsocial--nueva"></i></a>
                     <!-- Hotmail -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial  " href="https://outlook.live.com/mail/0/inbox " role="button "><i class="fas fa-envelope redsocial--nueva"></i></a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial  " href="https://outlook.live.com/mail/0/inbox " role="button "><i
+                            class="fas fa-envelope redsocial--nueva"></i></a>
                     <!-- Pinterest -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://ar.pinterest.com/ " role="button "><i class="fab fa-pinterest redsocial--nueva "></i></a>
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://ar.pinterest.com/ " role="button "><i
+                            class="fab fa-pinterest redsocial--nueva "></i></a>
 
                 </section>
             </div>
@@ -119,7 +115,8 @@
             </div>
         </footer>
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
