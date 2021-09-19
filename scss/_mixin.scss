@@ -1,8 +1,8 @@
-@mixin botones($color) {
+@mixin iconos($color) {
     color: $color;
     margin: 3px;
 }
 
 .boton {
-    @include botones(#D6BFFF)
+    @include iconos(#D6BFFF)
 }
