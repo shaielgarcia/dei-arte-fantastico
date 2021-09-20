@@ -1,6 +1,6 @@
 // Operaciones
-let nombre = "Shaiel"
-let apellido = "Garcia"
+let nombre = prompt("Ingresa tu nombre")
+let apellido = prompt("Ingrese apellido")
 
 console.log(`${nombre} ${apellido}`);
 
