@@ -1,14 +1,14 @@
 // Operaciones
-let nombre = prompt("Ingresa tu nombre")
-let apellido = prompt("Ingrese apellido")
 
-console.log(`${nombre} ${apellido}`);
+let nombre = prompt("Ingresa tu nombre");
+let apellido = prompt("Ingrese apellido");
+let añoDeNacimiento = Number(prompt("Ingresa tu año de nacimiento"));
+let mes = prompt("Mes en el que naciste?");
+let dia = Number(prompt("dia en el que naciste"));
 
+console.log(añoDeNacimiento + dia);
+console.log(añoDeNacimiento - dia);
+console.log(añoDeNacimiento * dia);
+console.log(añoDeNacimiento / dia);
 
-let num1 = Number(prompt("Ingresa tu edad"));
-let num2 = Number(prompt("Ingresa tu año de nacimiento"));
-
-console.log(num1 + num2);
-console.log(num1 - num2);
-console.log(num1 * num2);
-console.log(num1 / num2);
+alert("Hola " + " " + nombre + " " + apellido + " " + "acepta las politicas de privacidad?");
