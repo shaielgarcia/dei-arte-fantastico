@@ -1,14 +1,12 @@
-// Operaciones
+// algoritmo con un condicional
 
-let nombre = prompt("Ingresa tu nombre");
-let apellido = prompt("Ingrese apellido");
-let añoDeNacimiento = Number(prompt("Ingresa tu año de nacimiento"));
-let mes = prompt("Mes en el que naciste?");
-let dia = Number(prompt("dia en el que naciste"));
+const nom1 = "shaiel1"
+const nom2 = "shai02"
+const nom3 = "shaii2"
 
-console.log(añoDeNacimiento + dia);
-console.log(añoDeNacimiento - dia);
-console.log(añoDeNacimiento * dia);
-console.log(añoDeNacimiento / dia);
+let pregunta = prompt("Ingrese tu usuario")
 
-alert("Hola " + " " + nombre + " " + apellido + " " + "acepta las politicas de privacidad?");
+pregunta = pregunta.toLowerCase()
+
+if (pregunta === nom1 || pregunta === nom2 || pregunta === nom3) console.log(` Podes ingresar ${pregunta}`);
+else { alert(`Nombre de usuario incorrecto ${pregunta} `) }
