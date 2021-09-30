@@ -275,3 +275,81 @@ button {
 .footer__color--c {
   background-color: #A6A4E9;
   color: black; }
+
+.btn.btn-raised.btn-primary {
+  background-color: #d7a3e2 !important;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px; }
+
+.h {
+  background-color: #e2aaf3;
+  padding: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+  margin: 0; }
+
+.hh {
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  margin: 0; }
+
+.error {
+  background-color: #000000;
+  border: 1px solid #F4511E;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #F4511E; }
+
+.correcto {
+  background-color: black;
+  border: 1px solid #32a700;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #049632; }
+
+.error p {
+  margin: 0; }
+
+#contenido {
+  margin-top: 20px;
+  background-color: black;
+  -webkit-box-shadow: 0px 21px 46px -15px black;
+  -moz-box-shadow: 0px 21px 46px -15px black;
+  box-shadow: 0px 21px 46px -15px black; }
+
+.contenido-formulario {
+  margin-top: 60px; }
+
+#cargando {
+  text-align: center; }
+
+#cargando img {
+  display: none;
+  margin: 0 auto; }
+
+#resultado {
+  margin-bottom: 40px; }
+
+#resultado div {
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 0 0 20px 0; }
+
+#resultado div p {
+  margin-bottom: 0; }
+
+#resultado div p.header {
+  background-color: #c795e4;
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold; }
