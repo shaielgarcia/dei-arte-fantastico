@@ -73,3 +73,10 @@ listaObras.forEach(obj => {
 let search = prompt("Que obra buscas?")
 let buscadorMultiple = listaObras.filter(obj => obj.nombre === search)
 console.log(buscadorMultiple);
+
+let num1 = prompt("Ingrese tu numero de cuenta");
+let num2 = prompt("Ingrese la fecha del dia de hoy");
+
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
