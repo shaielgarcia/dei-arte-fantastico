@@ -80,3 +80,8 @@ let num2 = prompt("Ingrese la fecha del dia de hoy");
 console.log(num1 + num2);
 console.log(num1 - num2);
 console.log(num1 * num2);
+
+//Interaccion con mi html
+document.getElementById("nombre").value = "Shaiel";
+document.getElementById("edad").value = 20;
+document.getElementById("Curso").value = "Java script";
