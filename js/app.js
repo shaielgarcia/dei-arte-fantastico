@@ -81,7 +81,15 @@ console.log(num1 + num2);
 console.log(num1 - num2);
 console.log(num1 * num2);
 
-//Interaccion con mi html
-document.getElementById("nombre").value = "Shaiel";
-document.getElementById("edad").value = 20;
-document.getElementById("Curso").value = "Java script";
+
+
+
+//Eventos
+
+let miFormulario = document.getElementById("datos");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e) {
+    e.preventDefault();
+    console.log("Datos Enviados");
+}
