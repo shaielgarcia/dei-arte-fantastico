@@ -35,7 +35,6 @@ class esculturas {
         this.precio = precio
     }
 }
-
 let listaObras = [];
 
 listaObras.push(new esculturas("Duende del jardin", 7000))
@@ -81,8 +80,21 @@ console.log(num1 + num2);
 console.log(num1 - num2);
 console.log(num1 * num2);
 
+//JSON
+const enJSON = '{"precio":6000,"Obra":"Buda"}';
+const obra1 = JSON.parse(enJSON);
+console.log(typeof enJSON);
+console.log(typeof obra1);
+console.log(obra1.obra);
 
+const obra2 = JSON.parse(localStorage.getItem("obra1"));
+console.log(obra2.precio);
 
+//DOM
+
+document.getElementById("nombre").value = "Shaiel";
+document.getElementById("edad").value = 20;
+document.getElementById("curso").value = "JavaScript";
 
 //Eventos
 
