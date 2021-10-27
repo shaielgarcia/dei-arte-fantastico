@@ -80,28 +80,58 @@ console.log(num1 + num2);
 console.log(num1 - num2);
 console.log(num1 * num2);
 
-//JSON
-const enJSON = '{"precio":6000,"Obra":"Buda"}';
-const obra1 = JSON.parse(enJSON);
-console.log(typeof enJSON);
-console.log(typeof obra1);
-console.log(obra1.obra);
 
-const obra2 = JSON.parse(localStorage.getItem("obra1"));
-console.log(obra2.precio);
 
-//DOM
+//JQUERY
 
-document.getElementById("nombre").value = "Shaiel";
-document.getElementById("edad").value = 20;
-document.getElementById("curso").value = "JavaScript";
+console.log(document.getElementById("dei"));
+console.log(document.getElementsByClassName("preg"));
+console.log(document.getElementsByTagName("h1"));
 
-//Eventos
+console.log("-----------------------");
 
-let miFormulario = document.getElementById("datos");
-miFormulario.addEventListener("submit", validarFormulario);
+console.log($("h1"));
+console.log($("#dei"));
+console.log($(".preg"));
 
-function validarFormulario(e) {
-    e.preventDefault();
-    console.log("Datos Enviados");
+console.log("-----------------------");
+
+document.getElementById("boton").addEventListener("click", () => {
+    console.log(document.getElementById("dato").value);
+})
+
+console.log("-----------------------");
+
+const elemento = document.createElement("p")
+elemento.textContent = "Gracias por consultar"
+
+document.getElementById("divv").appendChild(elemento);
+
+$("#divv").append(
+    ` <p>JQ</p> `
+)
+
+const alumna = {
+    nombre: "shaiel",
+    edad: "20"
 }
+
+document.getElementById("elemento")
+
+$("#elemento")
+
+document.getElementById("elemento").addEventListener("click", () => {
+    console.log("Bienvenido")
+})
+
+$("#elemento").on("click", () => {
+    console.log("Bienvenido");
+})
+
+document.getElementById("elemento").onclick(() => {
+    console.log("Bienvenido");
+})
+
+$("#elemento").click(() => {
+    console.log("Bienvenido");
+})
