@@ -69,7 +69,7 @@ listaObras.forEach(obj => {
     console.log(obj.precio);
 })
 
-let search = prompt("Que obra buscas?")
+/*let search = prompt("Que obra buscas?")
 let buscadorMultiple = listaObras.filter(obj => obj.nombre === search)
 console.log(buscadorMultiple);
 
@@ -78,13 +78,13 @@ let num2 = prompt("Ingrese la fecha del dia de hoy");
 
 console.log(num1 + num2);
 console.log(num1 - num2);
-console.log(num1 * num2);
+console.log(num1 * num2); */
 
 
 
 //JQUERY
 
-console.log(document.getElementById("dei"));
+/*console.log(document.getElementById("dei"));
 console.log(document.getElementsByClassName("preg"));
 console.log(document.getElementsByTagName("h1"));
 
@@ -134,4 +134,18 @@ document.getElementById("elemento").onclick(() => {
 
 $("#elemento").click(() => {
     console.log("Bienvenido");
+})*/
+
+//Animaciones
+
+$(".boton1").on("click", () => {
+    $(".boton1").show()
+})
+
+$(".boton2").on("click", () => {
+    $(".boton1").hide()
+})
+
+$(".boton5").on("click", () => {
+    $(".cubo2").slideToggle(2000)
 })

@@ -353,3 +353,21 @@ button {
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold; }
+
+.container {
+  display: flex; }
+
+.cubo1 {
+  height: 100px;
+  width: 100px;
+  background-color: #d8a2f6; }
+
+.cubo2 {
+  height: 100px;
+  width: 100px;
+  background-color: #1d002c; }
+
+.cubo3 {
+  height: 100px;
+  width: 100px;
+  background-color: #9473a7; }
