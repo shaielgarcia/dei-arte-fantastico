@@ -88,6 +88,12 @@ img {
   text-shadow: 3px 3px 3px #D6BFFF;
   text-align: justify; }
 
+.parrafo {
+  color: #d7b8f3;
+  margin: 8px;
+  padding: 8px;
+  font-style: italic; }
+
 .grid-item {
   display: flex;
   flex-direction: column;
