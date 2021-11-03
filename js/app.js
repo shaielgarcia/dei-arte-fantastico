@@ -69,7 +69,7 @@ listaObras.forEach(obj => {
     console.log(obj.precio);
 })
 
-let search = prompt("Que obra buscas?")
+/*let search = prompt("Que obra buscas?")
 let buscadorMultiple = listaObras.filter(obj => obj.nombre === search)
 console.log(buscadorMultiple);
 
@@ -78,12 +78,12 @@ let num2 = prompt("Ingrese la fecha del dia de hoy");
 
 console.log(num1 + num2);
 console.log(num1 - num2);
-console.log(num1 * num2);
+console.log(num1 * num2);*/
 
 
 
 //JQUERY
-console.log(document.getElementById("dei"));
+/*console.log(document.getElementById("dei"));
 console.log(document.getElementsByClassName("preg"));
 console.log(document.getElementsByTagName("h1"));
 
@@ -133,4 +133,27 @@ document.getElementById("elemento").onclick(() => {
 
 $("#elemento").click(() => {
     console.log("Bienvenido");
-})
+}) */
+
+
+
+//AJAX
+
+
+const URLGET = "https://jsonplaceholder.typicode.com/posts"
+
+$("body").prepend('<button id="btn1">GET</button>');
+
+$("#btn1").click(() => {
+    $.get(URLGET, function(respuesta, estado) {
+        if (estado === "success") {
+            let misDatos = respuesta;
+            for (const dato of misDatos) {
+                $("body").prepend(`<div>
+                                   <h3>${dato.title}</h3>
+                                   <p> ${dato.body}</p>
+                                  </div>`);
+            }
+        }
+    });
+});
