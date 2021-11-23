@@ -1,17 +1,33 @@
+body {
+    margin: 0;
+}
+
 .carrusel {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3px;
-    padding: 3px;
 }
 
-.carrusel__ancho {
+.carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 20px 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid black;
+}
+
+.carrusel-item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-@media screen and (max-width: 400px) {
-    .carrusel {
-        width: 80%;
-    }
+.carrusel-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
 }

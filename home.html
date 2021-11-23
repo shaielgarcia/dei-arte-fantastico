@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--reglas de seo-->
-    <meta name="Description" content="Esculturas hechas de porcelana fría, criaturas fantasticas">
+    <meta name="Description" content="Cotiza tu seguro">
     <!--Titulo de mi pagina-->
-    <title>Dei Arte Fantástico</title>
+    <title>Cotizador</title>
     <!--links-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -27,279 +27,172 @@
 
 <body class="body">
     <!--Navegador-->
-    <header class="navegador">
-        <nav class="navegador navbar navbar-expand-lg navbar-light ">
-            <div class=" container-fluid ">
-                <a class="navbar-brand navegador__a navegador__titulo ">Dei Arte fantástico</a>
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarNavAltMarkup " aria-controls="navbarNavAltMarkup " aria-expanded="false " aria-label="Toggle navigation ">
+    <main id="main">
+        <header>
+            <h1>Seguros KR</h1>
+            <nav id="navegacion">
+                <ul>
+                    <li><a href="#home" class="activo">Home</a></li>
+                    <li><a href="#beneficios">Beneficios</a> </li>
 
-                </button>
+                </ul>
+            </nav>
+        </header>
 
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup ">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active navegador__a navegador__a--color navegador__diseño navegador__diseño--color " aria-current="page " href="./home.html ">Home</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="./pages/artista.html ">Artista</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="./pages/imagenes.html ">Imágenes</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="./pages/obras.html ">Inspiraciones</a>
-                        <a class="nav-link navegador__a navegador__a--color navegador__diseño navegador__diseño--color " href="./pages/contacto.html ">Contacto</a>
+        <!--carrucel-->
+        <div class="carrusel">
+            <div class="carrusel-items">
 
-                    </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/golfw.jpg" alt="">
                 </div>
-            </div>
-        </nav>
-    </header>
-
-
-
-    <!--Carrusel-->
-    <main>
-        <div class="carrusel ">
-            <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
-                <div class="carousel-indicators ">
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
+                <div class="carrusel-item img">
+                    <img src="./imag/audi.jpg" alt="">
                 </div>
-
-                <div class="carousel-inner ">
-                    <div class="carousel-item active ">
-                        <img src="./imag/125.jpg " class="d-block w-100 carrusel__ancho carrusel__ancho--largo " alt="... ">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="./imag/119.jpg " class="d-block w-100 carrusel__ancho carrusel__ancho--largo " alt="... ">
-                    </div>
-                    <div class="carousel-item ">
-                        <img src="./imag/imagen3-min.jpg " class="d-block w-100 carrusel__ancho carrusel__ancho--largo " alt="... ">
-                    </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/golpower.jpg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/suran.jpg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/fiat2.jpg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/auto1.jpeg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/goltrend.jpg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/toyota.jpg" alt="">
+                </div>
+                <div class="carrusel-item img">
+                    <img src="./imag/gris.jpg" alt="">
                 </div>
 
+                <div class="carrusel-item img">
+                    <img src="./imag/auto3.jpg" alt="">
+                </div>
             </div>
         </div>
-        <!--Java-->
-        <!--<form id="datos">
-            <input type="text" name="nombre" required id="nombre"><span class="barra"></span>
-            <label for="">Nombre</label>
-            <input type="number" name="edad" required id="edad"><span class="barra"></span>
-            <label for="">Edad</label>
-            <input type="text" name="Curso" required id="curso"><span class="barra"></span>
-            <label for="">Curso</label>
-            <input type="submit" value="Enviar">
-        </form>
 
-        <h1 class="body__h2 body__h2--diseño">Bienvenido</h1>
-        <h2 id="dei" class="parrafo ">Somos Dei Arte Fantastico</h2>
-        <h3 class="preg parrafo ">Deje su consulta</h3>
-        <input type="text" id="dato">
-        <button id="boton" type="button" class="btn btn-light">enviar</button>
-        <div id="divv"></div>
+        <section id="contenido">
 
-        ANIMACIONES
+            <article id="beneficios" class="bloque">
+                <h2>Beneficios</h2>
+                <p>Tranquilidad a la hora de manejar tu auto Hay eventos que cuando ocurren, te causan una pérdida económica importante. Por esta razón, contar con un seguro para tu auto te ayudará a manejar tranquilo ya que, por ejemplo, te puede brindar
+                    apoyo en caso de: Robo de tu vehículo. Daños a terceros. Daños a tu vehículo. Lesiones a los pasajeros. Un seguro automotriz es un mecanismo por el que se transfieren los riesgos relacionados al uso de tu vehículo desde una persona
+                    natural o jurídica a una compañía de seguros. Por ejemplo, el pago a un tercero en caso de un choque. Un seguro automotriz te puede proteger, en Chile o el extranjero, de las siguientes situaciones : daños materiales a tu vehículo,
+                    daños ocasionados a terceros, responsabilidad civil, robos (total o de accesorios), perjuicios causados por actos maliciosos o fenómenos naturales entre otros dependiendo del tipo de seguro que contrates. Una pequeña inversión mensual
+                    que significara un ahorro para tu futuro Los seguros funcionan sobre el principio básico de la transferencia del riesgo. Esto significa que resulta razonable optar por la certeza de un pequeño pago, frente a la posibilidad de una pérdida
+                    futura o daño de gran magnitud. Ahorrar tiempo y gastar menos en caso de accidente automotriz En caso de accidente, las consecuencias pueden ir desde un alto costo de reparación de tu vehículo, un gran daño material a otros vehículos
+                    e incluso personas lesionadas. Con un seguro de auto, se podrá compensar la pérdida o daño y tu situación económica no se verá afectada. Además, al contar con seguro de auto, ahorrarás tiempo, ya que tendrás la certeza de que recibirás
+                    asistencia en caso de avería o panne. La asistencia incluye: servicio de remolque, medios de transporte, estadía, transporte, depósito y custodia para tu vehículo reparado y recuperado, transporte de acompañantes en caso de lesiones,
+                    localización y envío de piezas de recambio, auto de reemplazo, auxilio ante pannes de mecánica ligera, inspección del vehículo durante tus vacaciones, conductor profesional por revisión técnica y de reemplazo y mantención por kilometraje.
+                    Todos estos servicios y beneficios pueden variar según el plan contratado. Te protege de robo Con un seguro automotriz tu auto estará protegido ante robos con pérdida total e incluso ante robos de accesorios de tu auto. No porque seas
+                    un buen chofer no necesitarás un seguro para tu auto. Nadie está libre de sufrir el robo de su auto y al tomar un seguro estarás protegido ante aquellos gastos que de otra forma serían muy difíciles de afrontar.</p>
+            </article>
 
-         <div class="container">
-            <div class="cubo1"></div>
-            <div class="cubo2"></div>
-            <div class="cubo3"></div>
+            <article id="Servicios" class="bloque">
 
-        </div>
+            </article>
 
-        <button class="boton1">1</button>
-        <button class="boton2">2</button>
-        <button class="boton3">3</button>
-        <button class="boton4">4</button>
-        <button class="boton5">5</button>
-        <button class="boton6">6</button> -->
-
-
-        <!--Cards-->
-        <section>
-            <h1 class="animate__animated animate__flipInX body__h2 body__h2--diseño ">Conoce un poco de los seres que inspiran las obras:</h1>
-            <!--Card 1-->
-            <div class="cards an ">
-                <div class="row row-cols-1 row-cols-md-3 g-4 ">
-                    <div class="col ">
-                        <div class="card body__cartas ">
-                            <span class="border border-4 ">
-                                <div class="img ">
-                                    <img src="./imag/hada.jpg " class="card-img-top " alt=" ">
-                                </div>
-                                <div class="card-body ">
-
-                                    <h2  class="card-title body__h2 body__h2--diseño " >Hadas </h2>
-
-                                    <p id="parrafo" class="card-text " >En su definición etimológica, se entiende por Hada: ser
-                                        fantástico con forma de mujer y a la cual se le atribuyen poderes mágicos. Las
-                                        Hadas o Fares corresponden a la misma corriente de vida que los "de la
-                                        Naturaleza ", sólo que
-                                        con mayor evolución, ya que pertenecen al plano mental. La materia de qué están
-                                        hechas las Hadas es sutil y etérea, traslúcida, y es así, bajo esta apariencia
-                                        que se las puede ver cuando se dignan mostrarse a los humanos, mas
-                                        cuando permanecen invisibles, entonces se muestran situadas en el plano astral,
-                                        pudiendo vernos ellas y nosotros no.</p>
-
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!--Card 2-->
-                <div class="col ">
-                    <div class="card body__cartas ">
-                        <span class="border border-4 ">
-                            <div class="img ">
-                                <img src="./imag/duende.jpg " class="card-img-top " alt=" ">
-                            </div>
-                            <div class="card-body ">
-
-                                <h2 class="card-title body__h2 body__h2--diseño ">Duendes</h2>
-
-                                <p class="card-text ">Según las mitologías celta y nórdica, los duendes son seres
-                                    elementales que están vinculados a la tierra, pues generalmente viven en plena
-                                    naturaleza y asumen la responsabilidad de protegerla y de custodiar sus tesoros.Las
-                                    leyendas difieren un poco dependiendo
-                                    de cada lugar de origen, todas coinciden en que los duendes tienen poderes mágicos y
-                                    un carácter bromista y traviesos.</p>
-
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!--Card 3-->
-            <div class="col ">
-                <div class="card body__cartas ">
-                    <span class="border border-4 ">
-                        <div class="img ">
-                            <img src="./imag/dragon 2.jpg " class="card-img-top " alt=" ">
-                        </div>
-                        <div class="card-body ">
-
-                            <h2 class="card-title body__h2 body__h2--diseño ">Dragones</h2>
-
-                            <p class="card-text ">Los dragones son inmensos reptiles alados pertenecientes a una de las
-                                razas más antiguas que existen en la mitología. Son conocidos por su enorme figura, de
-                                unos treinta metros, y por sus cualidades mágicas. Los dragones se pueden
-                                clasificar según el color de sus escamas. Dentro de cada especie de dragón hay
-                                categorías que se basan en la edad. El poder de un dragón va en aumento con los años, de
-                                manera que los dragones adultos son, posiblemente, las criaturas
-                                más poderosas dentro del mundo mitológico. </p>
-
-                    </span>
-                </div>
-            </div>
-            </div>
-            <!--Card 4-->
-            <div class="col ">
-                <div class="card body__cartas ">
-                    <span class="border border-4 ">
-                        <div class="img ">
-                            <img src="./imag/elementales.jpg " class="card-img-top " alt=" ">
-                        </div>
-                        <div class="card-body ">
-
-                            <h2 class="card-title body__h2 body__h2--diseño ">Elementales</h2>
-
-                            <p class="card-text ">Los elementales son fuerzas de la naturaleza que dominan a los
-                                elementos. El plano material primario está compuesto por 4 elementos; el fuego, la
-                                tierra, el aire y el agua. Los elementales son seres que, en el plano material, están
-                                compuestos por uno de los 4 elementos. Distinguimos así a los elementales de fuego,
-                                tierra, aire y agua. Estos seres, normalmente, habitan en un plano interno y se
-                                presentan en el plano primario cuando son invocados por medios
-                                mágicos. </p>
-
-                    </span>
-                </div>
-            </div>
-            </div>
-            <!--Card 5-->
-            <div class="col ">
-                <div class="card body__cartas ">
-                    <span class="border border-4 ">
-                        <div class="img ">
-                            <img src="./imag/mandragoras.jpg " class="card-img-top " alt=" ">
-                        </div>
-                        <div class="card-body ">
-
-                            <h2 class="card-title body__h2 body__h2--diseño ">Mandragoras</h2>
-
-                            <p class="card-text ">Desde la Antigüedad, la mandrágora ha sido objeto de numerosas
-                                leyendas, supersticiones y rituales debido a sus propiedades mágicas figurando en todos
-                                los recetarios de pócimas calmantes y afrodisíacas de la época. Los magos de la
-                                Edad Media tallaban una figura humana presionando la raíz a cierta altura para darle la
-                                forma de cuello y cortando todas las bifurcaciones hasta dejar cuatro, que serían las
-                                extremidades. Buscaban una forma humana y la adoraban
-                                como si se tratara de un dios.</p>
-
-                    </span>
-                </div>
-            </div>
-            </div>
-            <!--Card 6-->
-            <div class="col ">
-                <div class="card body__cartas ">
-                    <span class="border border-4 ">
-                        <div class="img ">
-                            <img src="./imag/mitologicosjpg " class="card-img-top " alt=" ">
-                        </div>
-                        <h2 class="body__h2 body__h2--diseño ">Criaturas mitologicas</h2>
-                        <p class="card-text ">Una criatura mitológica es una criatura legendaria o folclórica, a menudo
-                            conocidas como "criaturas fabulosas " Algunas criaturas, como el dragón o el grifo, tienen
-                            su origen en la mitología tradicional y se creía que eran reales
-                            Otras se basaron en criaturas reales, originándose en confusas historias de viajeros, como
-                            el Cordero vegetal de Tartaria, que se suponía era un cordero que crecía atado a la tierra,
-                            tratándose en realidad de un tipo de helecho.
-                            Algunas criaturas míticas son
-                            híbridos, una combinación de dos seres, ya sea de un animal y un humano, como dos animales.
-                        </p>
-
-                    </span>
-                </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
         </section>
 
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-8 mr-md-auto ml-md-auto">
+                    <div id="contenido">
+                        <header>
+                            <h1 class="text-center">Cotiza tu seguro de Auto</h1>
+                        </header>
+                        <div class="row contenido-formulario">
+                            <div class="col col-md-10 mr-md-auto ml-md-auto">
+                                <form action="#" id="cotizar-seguro">
+                                    <div class="form-group">
+                                        <label for="marca">Marca:</label>
+                                        <select class="form-control" id="marca">
+                                   <option value="">- Seleccionar -</option>
+                                   <option value="1">Americano</option>
+                                  <option value="2">Asiatico</option>
+                                  <option value="3">Europeo</option>
+                                </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="anio">Año:</label>
+                                        <select class="form-control" id="anio">
+                                                      
+                                                  </select>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        <div class="row">
+                                            <legend class="col-form-legend col-12">Tipo Seguro</legend>
+
+                                            <div class="col12">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="tipo" value="basico" checked>
+                                                        Básico
+                                                      </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="tipo" value="completo">
+                                                        Completo
+                                                      </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <div id="cargando">
+                                        <img src="img/spinner.gif">
+                                    </div>
+                                    <div id="resultado"></div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-raised btn-primary">Cotizar
+                                            </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--#contenido-->
+                </div>
+            </div>
+        </div>
+
+
     </main>
+
     <!--Pie de pagina-->
 
     <footer>
-        <footer class="text-center text-white footer ">
+        <footer class="text-center text-white fixed-bottom" style="background-color: #000000;">
             <!-- Grid container -->
-            <div class="container pt-3 ">
-                <!-- Section: Social media -->
-                <section class="mb-4 ">
-                    <!--redes sociales-->
-                    <!-- Facebook -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://www.facebook.com/dei.arte.fantastico " role="button ">
-                        <i class="fab fa-facebook-f redsocial--nueva ">
-                        </i>
-                    </a>
-                    <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://www.instagram.com/dei_artefantastico/?hl=es " role="button "><i
-                            class="fab fa-instagram redsocial--nueva "></i></a>
-                    <!-- Hotmail -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://outlook.live.com/mail/0/inbox " role="button "><i
-                            class="fas fa-envelope redsocial--nueva "></i></a>
-                    <!-- Pinterest -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1 redsocial " href="https://ar.pinterest.com/ " role="button "><i
-                            class="fab fa-pinterest redsocial--nueva "></i></a>
+            <div class="container p-4"></div>
+            <!-- Grid container -->
 
-                </section>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">kr-seguros.com</a>
             </div>
-            <div>
-                <div class="text-center text-dark p-3 footer__color--c ">
-                    © 2021 Copyright:
-                    <a class="text-dark " href="https://web.whatsapp.com ">Whatsapp</a>
-                </div>
-            </div>
+            <!-- Copyright -->
         </footer>
+    </footer>
 
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 
-        <!--Java script-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="./js/app.js"></script>
+    <!--Java script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/array.js"></script>
+    <script src="./js/nav.js"></script>
 
 </body>
 

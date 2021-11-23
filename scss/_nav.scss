@@ -1,31 +1,124 @@
-.navegador {
-    background-color: #A6A4E9;
-    margin: 0;
-    padding: 1px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    font-weight: 500;
+body {
+    font-family: georgia;
+    line-height: 1.6em;
 }
 
-.navegador__a {
-    font-style: italic;
-}
-
-.navegador__a--color {
+h1 {
+    font-size: 1em;
+    margin: 2em 0;
     color: white;
+    text-align: center;
 }
 
-.navegador__diseño {
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+h2 {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 2em 0;
+    &::before,
+    &::after {
+        content: ' – '
+    }
 }
 
-.navegador__diseño--color {
-    text-decoration: #d6bfff;
+#main {
+    max-width: 900px;
+    width: 90%;
+    margin: 2em auto;
+    background: rgb(0, 0, 0);
 }
 
-.navegador__titulo {
-    color: white;
+header {
+    text-align: center;
+}
+
+nav {
+    border-top: solid 2px rgb(255, 255, 255);
+    padding-top: 1em;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                color: rgb(0, 0, 0);
+                padding: 1em;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.9em;
+                border-radius: 0.3em;
+                &:hover {
+                    background: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                }
+                &.activo {
+                    background: rgb(143, 15, 15);
+                    color: rgb(0, 0, 0);
+                    //Animación
+                    animation: enlace-menu 500ms ease-in-out forwards;
+                }
+            }
+        }
+    }
+}
+
+#contenido {
+    margin-top: 1em;
+    border-top: solid 2px black;
+    perspective: 1000px;
+}
+
+.bloque {
+    background: rgb(0, 0, 0);
+    padding: 3em 2em;
+    display: none;
+    p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgb(255, 255, 255);
+    }
+    &.visible {
+        display: block;
+        //Animacion
+        animation: bloque-visible 500ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+}
+
+@keyframes bloque-visible {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    60% {
+        transform: rotateX(20deg);
+    }
+    75% {
+        transform: rotateX(-10deg);
+    }
+    90% {
+        transform: rotateX(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes enlace-menu {
+    0% {
+        transform: scale(0.8);
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    85% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

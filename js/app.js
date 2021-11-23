@@ -1,159 +1,164 @@
-//Array
-let obras = ["buda", "fauno", "duende del jardin", "criatura mitologica", "hadas", "dragones", "unicornio", "magos"]
-
-console.log(obras);
-
-obras.push("c magica")
-console.log(obras);
-
-obras.push("ogros")
-console.log(obras);
-
-obras.unshift("duende");
-console.log(obras);
-
-obras[3] = "Elementales"
-console.log(obras);
-
-obras.sort()
-console.log(obras)
-
-let listaDefinitiva = obras.concat(obras)
-console.log(listaDefinitiva);
-
-let listaReducida = listaDefinitiva.slice(2, 8)
-console.log(listaReducida)
-
-let lista1 = listaDefinitiva.slice(0, 3)
-let lista2 = listaDefinitiva.slice(8, listaDefinitiva.length)
-let lista3 = lista1.concat(lista2)
-console.log(lista3)
-
-class esculturas {
-    constructor(nombre, precio) {
-        this.nombre = nombre
+class seguro {
+    constructor(marca, precio) {
+        this.marca = marca
         this.precio = precio
     }
 }
-let listaObras = [];
 
-listaObras.push(new esculturas("Duende del jardin", 7000))
-listaObras.push(new esculturas("Buda", 9000))
-listaObras.push(new esculturas("Fauno", 8000))
-listaObras.push(new esculturas("Hadas", 2000))
-listaObras.push(new esculturas("Elemental", 6000))
-listaObras.push(new esculturas("Duende de cometa", 7000))
 
-const agregarEsculturasALaLista = () => {
-    let nombre = prompt("Nombre de la escultura");
-    let precio = Number(prompt("Precio del producto"));
-    let esculturas = new esculturas(nombre, precio)
-    listaObras.push(esculturas)
+function Seguro(marca, anio, tipo) {
+    this.marca = marca;
+    this.anio = anio;
+    this.tipo = tipo;
 }
+//cotizar seguro
+Seguro.prototype.cotizarSeguro = function() {
+    /*
+        1 = americano 1.15
+        2 = asiatico 1.05
+        3 = europeo 1.35        
+    */
 
-listaObras.sort((a, b) => {
-    if (a.precio > b.precio) {
-        return 1
+    let cantidad;
+    const base = 2000;
+
+    switch (this.marca) {
+        case '1':
+            cantidad = base * 1.15;
+            break;
+        case '2':
+            cantidad = base * 1.05;
+            break;
+        case '3':
+            cantidad = base * 1.35;
+            break;
     }
 
-    if (a.precio < b.precio) {
-        return -1
+    //año del auto (depende el año depende el valor)
+    const diferencia = new Date().getFullYear() - this.anio;
+
+    cantidad -= ((diferencia * 3) * cantidad) / 100;
+
+    // segun el tipo de seguro que elija se le agrega un porcentaje al precio
+    if (this.tipo === 'basico') {
+        cantidad *= 1.30;
+    } else {
+        cantidad *= 1.50;
     }
-    return 0
-})
-
-listaObras.toString()
-console.log(listaObras);
-
-listaObras.forEach(obj => {
-    console.log(obj.precio);
-})
-
-/*let search = prompt("Que obra buscas?")
-let buscadorMultiple = listaObras.filter(obj => obj.nombre === search)
-console.log(buscadorMultiple);
-
-let num1 = prompt("Ingrese tu numero de cuenta");
-let num2 = prompt("Ingrese la fecha del dia de hoy");
-
-console.log(num1 + num2);
-console.log(num1 - num2);
-console.log(num1 * num2);*/
-
-
-
-//JQUERY
-/*console.log(document.getElementById("dei"));
-console.log(document.getElementsByClassName("preg"));
-console.log(document.getElementsByTagName("h1"));
-
-console.log("-----------------------");
-
-console.log($("h1"));
-console.log($("#dei"));
-console.log($(".preg"));
-
-console.log("-----------------------");
-
-document.getElementById("boton").addEventListener("click", () => {
-    console.log(document.getElementById("dato").value);
-})
-
-console.log("-----------------------");
-
-const elemento = document.createElement("p")
-elemento.textContent = "Gracias por consultar"
-
-document.getElementById("divv").appendChild(elemento);
-
-$("#divv").append(
-    ` <p>JQ</p> `
-)
-
-const alumna = {
-    nombre: "shaiel",
-    edad: "20"
+    return cantidad;
 }
 
-document.getElementById("elemento")
 
-$("#elemento")
+function Interfaz() {}
 
-document.getElementById("elemento").addEventListener("click", () => {
-    console.log("Bienvenido")
-})
+// si falta algun dato te aparece menseje de error de lo contrario aparecera correcto con el resumen de tus gastos
+Interfaz.prototype.mostarMensaje = function(mensaje, tipo) {
+    const div = document.createElement("div");
 
-$("#elemento").on("click", () => {
-    console.log("Bienvenido");
-})
+    if (tipo === 'error') {
+        div.classList.add('mensaje', 'error');
+    } else {
+        div.classList.add("mensaje", "correcto");
+    }
 
-document.getElementById("elemento").onclick(() => {
-    console.log("Bienvenido");
-})
+    div.innerHTML = `${mensaje}`;
+    formulario.insertBefore(div, document.querySelector(".form-group"));
 
-$("#elemento").click(() => {
-    console.log("Bienvenido");
-}) */
-
-
-
-//AJAX
+    setTimeout(function() {
+        document.querySelector('.mensaje').remove();
+    }, 2000);
+};
 
 
-const URLGET = "https://jsonplaceholder.typicode.com/posts"
+Interfaz.prototype.mostrarResultado = function(seguro, total) {
+    const resultado = document.getElementById('resultado');
+    let marca;
 
-$("body").prepend('<button id="btn1">GET</button>');
+    switch (seguro.marca) {
+        case '1':
+            marca = 'Americano';
+            break;
+        case '2':
+            marca = 'Asiático';
+            break;
+        case '3':
+            marca = 'Europeo';
+            break;
+    }
 
-$("#btn1").click(() => {
-    $.get(URLGET, function(respuesta, estado) {
-        if (estado === "success") {
-            let misDatos = respuesta;
-            for (const dato of misDatos) {
-                $("body").prepend(`<div>
-                                   <h3>${dato.title}</h3>
-                                   <p> ${dato.body}</p>
-                                  </div>`);
-            }
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+       <p class="header">Tu resumen:</p>
+       <p>Marca: ${marca}</p>
+       <p> Año: ${seguro.anio}</p>
+       <p>Tipo: ${seguro.tipo}</p>
+       <p>Total: $ ${total}</p>   
+    `;
+    const spinner = document.querySelector('#cargando img');
+    spinner.style.display = 'block';
+
+    setTimeout(function() {
+        spinner.style.display = 'none';
+        resultado.appendChild(div);
+    }, 500);
+
+}
+
+//datos del formulario
+const formulario = document.getElementById('cotizar-seguro');
+
+formulario.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const marca = document.getElementById('marca');
+    const marcaSeleccionada = marca.options[marca.selectedIndex].value;
+
+
+    const anio = document.getElementById("anio");
+    const anioSeleccionado = anio.options[anio.selectedIndex].value;
+
+
+    const tipo = document.querySelector('input[name="tipo"]:checked').value;
+
+
+    const interfaz = new Interfaz();
+
+    //revisar los campos
+    if (marcaSeleccionada === '' || anioSeleccionado === '' || tipo === '') {
+
+        interfaz.mostarMensaje('Faltan Datos, revisa e intenta de nuevo', 'error');
+    } else {
+
+        const resultados = document.querySelector('#resultado div');
+        if (resultados != null) {
+            resultados.remove();
         }
-    });
+
+        const seguro = new Seguro(marcaSeleccionada, anioSeleccionado, tipo);
+
+        const cantidad = seguro.cotizarSeguro(seguro);
+        //mostrar resultado
+        interfaz.mostrarResultado(seguro, cantidad);
+        interfaz.mostarMensaje('Cotizando', 'correcto');
+
+    }
+
 });
+
+
+
+
+const max = new Date().getFullYear(),
+    min = max - 20;
+
+const selectAnios = document.getElementById('anio');
+
+for (let i = max; i > min; i--) {
+    let option = document.createElement('option');
+    option.value = i;
+    option.innerHTML = i;
+    selectAnios.appendChild(option);
+
+}
